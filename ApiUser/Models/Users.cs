@@ -32,5 +32,6 @@ namespace projeto.Api_fisco.Models
         [Required]
         [StringLength(80)]
         public string? Email { get; set; }
+
     }
 }

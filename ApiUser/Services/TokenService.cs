@@ -26,7 +26,7 @@ namespace ApiCatalogo.Services
             var token = new JwtSecurityToken(issuer: issuer,
                                        audience: audience,
                                        claims: claims,
-                                       expires: DateTime.Now.AddMinutes(10),
+                                       expires: DateTime.Now.AddYears(10),
                                        signingCredentials: credentials);
 
             var tokenHandler = new JwtSecurityTokenHandler();

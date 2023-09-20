@@ -6,9 +6,8 @@ namespace ApiUser.ApiEndpoints
 {
     public static class UsersEndpoints
     {
-     public static void MapCategoriasEndpoints(this WebApplication app)
+     public static async void MapCategoriasEndpoints(this WebApplication app)
         {
-            
 
             app.MapGet("/users", async (AppDbContext db) =>
                await db.Users.ToListAsync()).WithTags("Users").RequireAuthorization();
@@ -21,5 +20,6 @@ namespace ApiUser.ApiEndpoints
                                  : Results.NotFound();
                 });
         }
+
     }
 }

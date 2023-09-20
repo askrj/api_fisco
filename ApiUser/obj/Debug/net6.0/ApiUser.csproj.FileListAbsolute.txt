@@ -91,3 +91,8 @@ C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\Microsoft.Ident
 C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\web.config
+C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\ApiUser.deps.json
+C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\ApiUser.runtimeconfig.json
+C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\appsettings.json
