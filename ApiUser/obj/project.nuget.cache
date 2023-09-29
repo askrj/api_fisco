@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ruAG2f3hh9+oXpI0wNodEJJ2wgmbvhZGCpGJJctJ/xo3mS+awJGkTDX2mcSEBPmFIA5bdNs2ouFECF7dt13Ivw==",
+  "dgSpecHash": "PCmQ/bOF6tLya8B4IApeZVcdZ3zyH4SbUHcPEquE+oR89vHnJqS7HkGe7B6L6PBNlX+W1BI7F1Q72aVUizTmeQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\ApiUser\\ApiUser.csproj",
+  "projectFilePath": "C:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\apiuser\\ApiUser.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alex.santos\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\alex.santos\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.2\\microsoft.aspnetcore.authentication.jwtbearer.6.0.2.nupkg.sha512",

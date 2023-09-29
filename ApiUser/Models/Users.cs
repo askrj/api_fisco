@@ -1,11 +1,9 @@
-using System;
-using System.Collections.Generic;
+
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace projeto.Api_fisco.Models
+
+namespace projeto.ApiUser.Models
 {
     [Table("Users")]
     public class Users
@@ -17,8 +15,6 @@ namespace projeto.Api_fisco.Models
         [StringLength(80)]
         public string? Nome { get; set; }
 
-        [Required]
-        [StringLength(9)]
         public string? Carteira { get; set; }
 
         [Required]
@@ -32,6 +28,8 @@ namespace projeto.Api_fisco.Models
         [Required]
         [StringLength(80)]
         public string? Email { get; set; }
+
+        ICollection<Users>? _users { get; set; }
 
     }
 }

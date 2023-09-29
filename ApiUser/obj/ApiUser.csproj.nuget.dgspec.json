@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\ApiUser\\ApiUser.csproj": {}
+    "C:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\apiuser\\ApiUser.csproj": {}
   },
   "projects": {
-    "c:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\ApiUser\\ApiUser.csproj": {
+    "C:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\apiuser\\ApiUser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\ApiUser\\ApiUser.csproj",
+        "projectUniqueName": "C:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\apiuser\\ApiUser.csproj",
         "projectName": "ApiUser",
-        "projectPath": "c:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\ApiUser\\ApiUser.csproj",
+        "projectPath": "C:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\apiuser\\ApiUser.csproj",
         "packagesPath": "C:\\Users\\alex.santos\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\ApiUser\\obj\\",
+        "outputPath": "C:\\Users\\alex.santos\\Dropbox\\projeto\\Api_fisco\\apiuser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alex.santos\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+
 using System.Text;
-using System.Threading.Tasks;
-using ApiCatalogo.Services;
+using ApiUser.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using projeto.Api_fisco.Context;
+using projeto.ApiUser.Context;
 
 namespace projeto.Api_fisco.AppServicesExtensions
 {
@@ -24,7 +21,7 @@ namespace projeto.Api_fisco.AppServicesExtensions
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiCatalogo", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiUsers", Version = "v1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
@@ -66,6 +63,7 @@ namespace projeto.Api_fisco.AppServicesExtensions
                              ServerVersion.AutoDetect(connectionString)));
 
             builder.Services.AddSingleton<ITokenService>(new TokenService());
+            builder.Services.AddSingleton<IAutenticacao>(new AutenticacaoService());
             return builder;
         }
         public static WebApplicationBuilder AddAutenticationJwt(this WebApplicationBuilder builder)

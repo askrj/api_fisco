@@ -1,8 +1,8 @@
 ﻿
-using ApiCatalogo.Models;
-using projeto.Api_fisco.Models;
 
-namespace ApiCatalogo.Services;
+using projeto.ApiUser.Models;
+
+namespace ApiUser.Services;
 
 public interface ITokenService
 {

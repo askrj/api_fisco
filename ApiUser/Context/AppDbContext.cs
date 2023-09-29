@@ -1,11 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using projeto.Api_fisco.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using projeto.ApiUser.Models;
 
-namespace projeto.Api_fisco.Context
+
+namespace projeto.ApiUser.Context
 {
     public class AppDbContext : DbContext
     {

@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using projeto.Api_fisco.Context;
-using projeto.Api_fisco.Models;
+﻿
+using Microsoft.EntityFrameworkCore;
+using projeto.ApiUser.Context;
+using projeto.ApiUser.Models;
 
 namespace ApiUser.ApiEndpoints
 {

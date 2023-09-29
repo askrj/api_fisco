@@ -1,12 +1,10 @@
-﻿
-using ApiCatalogo.Models;
-using Microsoft.IdentityModel.Tokens;
-using projeto.Api_fisco.Models;
+﻿using Microsoft.IdentityModel.Tokens;
+using projeto.ApiUser.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace ApiCatalogo.Services
+namespace ApiUser.Services
 {
     public class TokenService : ITokenService
     {
@@ -14,7 +12,8 @@ namespace ApiCatalogo.Services
         {
             var claims = new[]
             {
-                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.Name, user.Carteira),
+                new(ClaimTypes.Email, user.Senha),
                 new Claim(ClaimTypes.NameIdentifier,Guid.NewGuid().ToString())
             };
 
@@ -26,7 +25,7 @@ namespace ApiCatalogo.Services
             var token = new JwtSecurityToken(issuer: issuer,
                                        audience: audience,
                                        claims: claims,
-                                       expires: DateTime.Now.AddYears(10),
+                                       expires: DateTime.Now.AddHours(3),
                                        signingCredentials: credentials);
 
             var tokenHandler = new JwtSecurityTokenHandler();

@@ -22,7 +22,7 @@ namespace projeto.Api_fisco.AppServicesExtensions
             app.UseCors(p =>
             {
                 p.AllowAnyOrigin();
-                p.WithMethods("GET");
+                p.WithMethods();
                 p.AllowAnyHeader();
             });
             return app;

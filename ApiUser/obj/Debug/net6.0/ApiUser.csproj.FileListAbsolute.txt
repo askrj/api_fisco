@@ -96,3 +96,8 @@ C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\
 C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\ApiUser.runtimeconfig.json
 C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\appsettings.Development.json
 C:\Users\alex.santos\Dropbox\projeto\Api_fisco\apiuser\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\publish\web.config
+C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\publish\ApiUser.deps.json
+C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\publish\ApiUser.runtimeconfig.json
+C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\Alex\Dropbox\projeto\Api_fisco\ApiUser\bin\Debug\net6.0\publish\appsettings.json

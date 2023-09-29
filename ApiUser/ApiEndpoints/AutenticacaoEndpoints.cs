@@ -1,27 +1,31 @@
-﻿using ApiCatalogo.Models;
-using ApiCatalogo.Services;
+﻿using System;
+using ApiUser.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using projeto.ApiUser.Context;
+using projeto.ApiUser.Models;
 
 namespace ApiUser.ApiEndpoints
 {
     public static class AutenticacaoEndpoints
     {
+        
         public static void MapAutenticacaoEndpoints(this WebApplication app)
         {
             //endpoint para login
-            app.MapPost("/login", [AllowAnonymous] (UserModel userModel,
-                ITokenService tokenService) =>
+            app.MapPost("/login", [AllowAnonymous] ([FromServices] AppDbContext context,
+            [FromBody] UserModel model, ITokenService tokenService) =>
             {
-                if (userModel == null)
-                {
-                    return Results.BadRequest("Login Inválido");
-                }
-                if (userModel.UserName == "fiscosaude" && userModel.Password == "fisco123")
+
+            var todo = context.Users.FirstOrDefault(x => x.Carteira == model.Carteira && x.Senha == model.Senha);
+                
+
+                if (todo != null )
                 {
                     var tokenString = tokenService.GerarToken(app.Configuration["Jwt:Key"],
                         app.Configuration["Jwt:Issuer"],
                         app.Configuration["Jwt:Audience"],
-                        userModel);
+                        model);
                     return Results.Ok(new { token = tokenString });
                 }
                 else
